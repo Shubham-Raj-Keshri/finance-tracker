@@ -1,0 +1,25 @@
+/* ── INSIGHTS ─────────────────────────────────────── */
+.insights-filters { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px; align-items: center; }
+.insights-filters input { width: auto; min-width: 150px; }
+.insights-filters .date-range { display: flex; align-items: center; gap: 6px; }
+.insights-filters .date-sep { font-size: 12px; color: #9ca3af; font-weight: 600; white-space: nowrap; }
+.btn-clear-filter { background: #f3f4f6; color: #6b7280; font-size: 13px; padding: 8px 14px; border-radius: 8px; font-weight: 600; }
+.btn-clear-filter:hover { background: #e5e7eb; }
+.btn-fetch { background: #6366f1; color: white; padding: 10px 18px; font-size: 13px; font-weight: 700; border-radius: 8px; }
+.btn-fetch:hover:not(:disabled) { background: #4f46e5; }
+
+.insights-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.insights-section h4 { font-size: 13px; font-weight: 700; color: #6b7280; text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 14px; }
+.insight-row { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.insight-label { width: 90px; font-size: 13px; font-weight: 600; color: #374151; flex-shrink: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-transform: capitalize; }
+.insight-bar-wrap { flex: 1; background: #f3f4f6; border-radius: 6px; height: 20px; overflow: hidden; }
+.insight-bar { height: 100%; border-radius: 6px; min-width: 4px; transition: width 0.5s ease; }
+.insight-amount { font-size: 13px; font-weight: 700; width: 80px; text-align: right; flex-shrink: 0; }
+.insight-amount.income { color: #10b981; }
+.insight-amount.expense { color: #ef4444; }
+
+.no-insights { text-align: center; color: #9ca3af; padding: 40px 20px; font-size: 14px; line-height: 1.6; }
+
+@media (max-width: 768px) {
+  .insights-grid { grid-template-columns: 1fr; }
+}

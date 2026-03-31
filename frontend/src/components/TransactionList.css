@@ -1,0 +1,60 @@
+/* ── TABLE ────────────────────────────────────────── */
+.table-wrap { overflow-x: auto; border-radius: 10px; border: 1px solid #f3f4f6; }
+.tx-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.tx-table thead tr { background: #f9fafb; border-bottom: 2px solid #f3f4f6; }
+.tx-table th { padding: 12px 16px; text-align: left; font-size: 11px; font-weight: 700; color: #9ca3af; text-transform: uppercase; letter-spacing: 0.6px; white-space: nowrap; }
+.tx-table td { padding: 13px 16px; border-bottom: 1px solid #f9fafb; vertical-align: middle; }
+.tx-row:last-child td { border-bottom: none; }
+.tx-row:hover td { background: #fafbff; }
+.tx-row.income { border-left: 3px solid #10b981; }
+.tx-row.expense { border-left: 3px solid #ef4444; }
+
+.tx-cat { display: flex; align-items: center; gap: 8px; font-weight: 600; color: #111827; }
+.tx-cat-icon { font-size: 18px; }
+.tx-desc { color: #6b7280; font-size: 13px; max-width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tx-date { color: #6b7280; font-size: 13px; white-space: nowrap; }
+.muted { color: #d1d5db; }
+
+.tx-amount { font-weight: 800; font-size: 15px; letter-spacing: -0.3px; }
+.tx-amount.income { color: #10b981; }
+.tx-amount.expense { color: #ef4444; }
+
+.badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; }
+.badge-income { background: #f0fdf4; color: #10b981; }
+.badge-expense { background: #fef2f2; color: #ef4444; }
+
+.row-actions { display: flex; gap: 6px; }
+.btn-icon { background: none; font-size: 16px; padding: 4px 6px; border-radius: 6px; }
+.btn-icon-edit:hover { background: #ede9fe; }
+.btn-icon-del:hover { background: #fee2e2; }
+
+/* ── PAGINATION ───────────────────────────────────── */
+.pagination { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 16px 0 4px; }
+.pg-btn { background: #f3f4f6; color: #374151; padding: 7px 14px; font-size: 13px; font-weight: 600; border-radius: 8px; }
+.pg-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.pg-btn:not(:disabled):hover { background: #e5e7eb; }
+.pg-pages { display: flex; gap: 4px; }
+.pg-num { width: 32px; height: 32px; border-radius: 8px; font-size: 13px; font-weight: 600; background: #f3f4f6; color: #374151; }
+.pg-num.active { background: #6366f1; color: white; }
+.pg-num:not(.active):hover { background: #e5e7eb; }
+
+/* ── CONFIRM MODAL ────────────────────────────────── */
+.confirm-body { text-align: center; padding: 8px 0; }
+.confirm-icon { font-size: 40px; margin-bottom: 14px; }
+.confirm-body p { font-size: 14px; color: #374151; line-height: 1.6; }
+.confirm-sub { font-size: 12px; color: #9ca3af; margin-top: 6px; margin-bottom: 20px; }
+.btn-danger { background: linear-gradient(135deg, #ef4444, #dc2626); color: white; padding: 10px 22px; border-radius: 8px; font-weight: 700; font-size: 14px; box-shadow: 0 2px 8px rgba(239,68,68,0.3); }
+.btn-danger:hover:not(:disabled) { box-shadow: 0 4px 14px rgba(239,68,68,0.4); transform: translateY(-1px); }
+
+/* ── EMPTY STATE ──────────────────────────────────── */
+.empty-state { text-align: center; color: #9ca3af; padding: 48px 20px; font-size: 14px; }
+.empty-icon { font-size: 40px; margin-bottom: 12px; }
+.empty-state p { margin-top: 6px; font-size: 13px; }
+
+/* ── RESPONSIVE ───────────────────────────────────── */
+@media (max-width: 768px) {
+  .tx-table th:nth-child(2), .tx-table td:nth-child(2) { display: none; }
+}
+@media (max-width: 640px) {
+  .tx-table th:nth-child(3), .tx-table td:nth-child(3) { display: none; }
+}
