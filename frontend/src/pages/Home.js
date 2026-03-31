@@ -89,7 +89,7 @@ export default function Home({ onNavigate }) {
         <button className="btn-cta" onClick={() => onNavigate("register")}>Create Free Account →</button>
       </section>
 
-      <footer className="home-footer">© 2025 FinanceTracker. Built with ❤️</footer>
+      <footer className="home-footer">© 2025 Shubham Keshri. Built with ❤️</footer>
     </div>
   );
 }
