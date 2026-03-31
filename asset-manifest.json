@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/finance-tracker/static/css/main.2f86ba71.css",
+    "main.js": "/finance-tracker/static/js/main.3f9392fc.js",
+    "static/js/453.825386d9.chunk.js": "/finance-tracker/static/js/453.825386d9.chunk.js",
+    "index.html": "/finance-tracker/index.html",
+    "main.2f86ba71.css.map": "/finance-tracker/static/css/main.2f86ba71.css.map",
+    "main.3f9392fc.js.map": "/finance-tracker/static/js/main.3f9392fc.js.map",
+    "453.825386d9.chunk.js.map": "/finance-tracker/static/js/453.825386d9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f86ba71.css",
+    "static/js/main.3f9392fc.js"
+  ]
+}
